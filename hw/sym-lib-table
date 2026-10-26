@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "upd78c14_reader")(type "KiCad")(uri "${KIPRJMOD}/upd78c14_reader.kicad_sym")(options "")(descr "uPD78C14GF reader project symbols"))
+)

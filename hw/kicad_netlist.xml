@@ -1,0 +1,1028 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>/home/jeroen/Downloads/PCEngine_Duo/upd78c14-pico-reader/hw/upd78c14-pico-reader.kicad_sch</source>
+    <date>2026-10-26T20:52:21+0100</date>
+    <tool>Eeschema 9.0.8+dfsg-1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>uPD78C14 mask-ROM reader - Raspberry Pi Pico 2</title>
+        <company/>
+        <rev>1</rev>
+        <date>2026-10-26</date>
+        <source>upd78c14-pico-reader.kicad_sch</source>
+        <comment number="1" value="Port of devinacker/upd7811-reader (firmware public domain, hardware CC BY-SA 4.0)"/>
+        <comment number="2" value="PC Engine Duo CD controller uPD78C14GF dump"/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="A1">
+      <value>Raspberry Pi Pico 2</value>
+      <footprint>Module:RaspberryPi_Pico_Common_THT</footprint>
+      <fields>
+        <field name="Footprint">Module:RaspberryPi_Pico_Common_THT</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="MCU_Module" part="RaspberryPi_Pico" description="Versatile and inexpensive microcontroller module powered by RP2040 dual-core Arm Cortex-M0+ processor up to 133 MHz, 264kB SRAM, 2MB QSPI flash; also supports Raspberry Pi Pico 2"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="upd78c14-pico-reader.kicad_sch"/>
+      <property name="ki_keywords" value="RP2350A M33 RISC-V Hazard3 usb"/>
+      <property name="ki_fp_filters" value="RaspberryPi?Pico?Common* RaspberryPi?Pico?SMD*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>948fece7-9ca4-5691-b959-f2dbf488c475</tstamps>
+    </comp>
+    <comp ref="C1">
+      <value>100nF</value>
+      <footprint>Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="upd78c14-pico-reader.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>89c79230-04b7-5df3-97f5-157109ccc7af</tstamps>
+    </comp>
+    <comp ref="C2">
+      <value>100nF</value>
+      <footprint>Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="upd78c14-pico-reader.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1b0f3644-1d03-5564-bc1b-5188c091e9ca</tstamps>
+    </comp>
+    <comp ref="C3">
+      <value>100nF</value>
+      <footprint>Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="upd78c14-pico-reader.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>69ca5bb1-81c6-5562-93e2-25ce96e9cd39</tstamps>
+    </comp>
+    <comp ref="R1">
+      <value>22k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <fields>
+        <field name="Footprint">Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="upd78c14-pico-reader.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c834b802-c43b-5ac9-91b7-d29beac1fe64</tstamps>
+    </comp>
+    <comp ref="R2">
+      <value>22k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <fields>
+        <field name="Footprint">Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="upd78c14-pico-reader.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>88a3f035-baec-5d60-9c86-dd814d8c5ea4</tstamps>
+    </comp>
+    <comp ref="R3">
+      <value>22k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <fields>
+        <field name="Footprint">Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="upd78c14-pico-reader.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>baa5fecf-1be7-52fc-abdb-b28fffd6c4b1</tstamps>
+    </comp>
+    <comp ref="R4">
+      <value>22k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <fields>
+        <field name="Footprint">Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="upd78c14-pico-reader.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ad10cf33-3db5-5914-b0ef-f441f88c4f7e</tstamps>
+    </comp>
+    <comp ref="R5">
+      <value>22k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <fields>
+        <field name="Footprint">Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="upd78c14-pico-reader.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7188af2b-7722-5440-9911-a310844df0b9</tstamps>
+    </comp>
+    <comp ref="R6">
+      <value>22k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <fields>
+        <field name="Footprint">Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="upd78c14-pico-reader.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8157cc2c-36f1-5818-85e8-3a64e5eaa2c8</tstamps>
+    </comp>
+    <comp ref="R7">
+      <value>22k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <fields>
+        <field name="Footprint">Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="upd78c14-pico-reader.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9067343f-251a-5066-8663-8c1916c72292</tstamps>
+    </comp>
+    <comp ref="R8">
+      <value>22k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <fields>
+        <field name="Footprint">Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="upd78c14-pico-reader.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c0c304d9-7105-5789-b902-28bfddacac10</tstamps>
+    </comp>
+    <comp ref="R9">
+      <value>22k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <fields>
+        <field name="Footprint">Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="upd78c14-pico-reader.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3c132822-2620-59d0-b88c-21873181b629</tstamps>
+    </comp>
+    <comp ref="R10">
+      <value>22k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <fields>
+        <field name="Footprint">Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="upd78c14-pico-reader.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>749ed3f6-15e0-5f14-8be0-ef0915e38143</tstamps>
+    </comp>
+    <comp ref="R11">
+      <value>22k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <fields>
+        <field name="Footprint">Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="upd78c14-pico-reader.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>33452872-1fe3-5afe-9b5e-0bddd26c9020</tstamps>
+    </comp>
+    <comp ref="R12">
+      <value>22k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <fields>
+        <field name="Footprint">Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="upd78c14-pico-reader.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>bf9ae02f-d7d0-5b9a-bd3d-db4ece84321b</tstamps>
+    </comp>
+    <comp ref="R13">
+      <value>22k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <fields>
+        <field name="Footprint">Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="upd78c14-pico-reader.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c057fa4c-dcda-59c5-948c-16e68a80bfb7</tstamps>
+    </comp>
+    <comp ref="R14">
+      <value>22k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <fields>
+        <field name="Footprint">Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="upd78c14-pico-reader.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>79013fd9-645e-5e40-9db7-9fe4d9ac848e</tstamps>
+    </comp>
+    <comp ref="R15">
+      <value>22k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <fields>
+        <field name="Footprint">Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="upd78c14-pico-reader.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>747667c7-d1de-502a-a4be-e075825a8ae1</tstamps>
+    </comp>
+    <comp ref="R16">
+      <value>22k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <fields>
+        <field name="Footprint">Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="upd78c14-pico-reader.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d3b2eb81-812c-5676-9b15-d813e329b1ba</tstamps>
+    </comp>
+    <comp ref="R17">
+      <value>22k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <fields>
+        <field name="Footprint">Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="upd78c14-pico-reader.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7862ff4e-d401-590a-bdeb-5fe5dc42bbe5</tstamps>
+    </comp>
+    <comp ref="R18">
+      <value>22k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <fields>
+        <field name="Footprint">Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="upd78c14-pico-reader.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5ab5c2ac-87cf-5225-a902-b001aa3168b2</tstamps>
+    </comp>
+    <comp ref="R19">
+      <value>22k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <fields>
+        <field name="Footprint">Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="upd78c14-pico-reader.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9eeba6e5-df4c-5058-a71d-c7d88e1149d8</tstamps>
+    </comp>
+    <comp ref="R20">
+      <value>22k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <fields>
+        <field name="Footprint">Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="upd78c14-pico-reader.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>540d6047-fdb1-5605-8eeb-1aeea1c4c559</tstamps>
+    </comp>
+    <comp ref="R21">
+      <value>22k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <fields>
+        <field name="Footprint">Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="upd78c14-pico-reader.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>08c89c91-9a4e-5143-adda-605a2b1b607c</tstamps>
+    </comp>
+    <comp ref="R22">
+      <value>22k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <fields>
+        <field name="Footprint">Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="upd78c14-pico-reader.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>539caf5e-4e61-5b2a-9b23-ae77001b37e2</tstamps>
+    </comp>
+    <comp ref="R23">
+      <value>22k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <fields>
+        <field name="Footprint">Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="upd78c14-pico-reader.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>44a49442-b6ad-5136-9d0e-095a144e82df</tstamps>
+    </comp>
+    <comp ref="R24">
+      <value>4.7k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <fields>
+        <field name="Footprint">Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="upd78c14-pico-reader.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>abc470dc-8c81-5c73-baa3-6c0e9f8bd790</tstamps>
+    </comp>
+    <comp ref="U1">
+      <value>uPD78C14GF (QFP64-&gt;DIP64 900mil adapter)</value>
+      <footprint>Package_DIP:DIP-64_W22.86mm</footprint>
+      <fields>
+        <field name="Footprint">Package_DIP:DIP-64_W22.86mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="upd78c14_reader" part="uPD78C14GF" description="NEC uCOM-87AD 8-bit MCU, 16 KB mask ROM, 64-pin QFP (GF-3BE); pin numbers are QFP pins"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="upd78c14-pico-reader.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>23eb4c26-e2ef-53aa-9cb1-59dc0767585d</tstamps>
+    </comp>
+    <comp ref="U2">
+      <value>74HCT04</value>
+      <footprint>Package_DIP:DIP-14_W7.62mm</footprint>
+      <fields>
+        <field name="Footprint">Package_DIP:DIP-14_W7.62mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="74xx" part="74HCT04" description="Hex Inverter"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="upd78c14-pico-reader.kicad_sch"/>
+      <property name="ki_keywords" value="HCTMOS not inv"/>
+      <property name="ki_fp_filters" value="DIP*W7.62mm* SSOP?14* TSSOP?14*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>db4e80f4-5bc9-55c0-9ccf-cb3b5ade827c a577da17-8b59-534f-9add-a93f26530ee9 4deed344-c0c3-56a5-8398-a5ed6d84c397 cd28b4bd-280b-50f8-be75-c3af1ff565d9 8daa0f7c-d90d-51ff-a773-6885dc3d8d09 907c4ff2-029d-5602-ba25-9689b814861f 35093895-4ce5-560c-aef3-c83c18687a4b</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="74xx" part="74HCT04">
+      <description>Hex Inverter</description>
+      <docs>https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf</docs>
+      <footprints>
+        <fp>DIP*W7.62mm*</fp>
+        <fp>SSOP?14*</fp>
+        <fp>TSSOP?14*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">74HCT04</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf</field>
+        <field name="Description">Hex Inverter</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="input"/>
+        <pin num="2" name="" type="output"/>
+        <pin num="3" name="" type="input"/>
+        <pin num="4" name="" type="output"/>
+        <pin num="5" name="" type="input"/>
+        <pin num="6" name="" type="output"/>
+        <pin num="7" name="GND" type="power_in"/>
+        <pin num="8" name="" type="output"/>
+        <pin num="9" name="" type="input"/>
+        <pin num="10" name="" type="output"/>
+        <pin num="11" name="" type="input"/>
+        <pin num="12" name="" type="output"/>
+        <pin num="13" name="" type="input"/>
+        <pin num="14" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C">
+      <description>Unpolarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">Resistor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="MCU_Module" part="RaspberryPi_Pico">
+      <description>Versatile and inexpensive microcontroller module powered by RP2040 dual-core Arm Cortex-M0+ processor up to 133 MHz, 264kB SRAM, 2MB QSPI flash; also supports Raspberry Pi Pico 2</description>
+      <docs>https://datasheets.raspberrypi.com/pico/pico-datasheet.pdf</docs>
+      <footprints>
+        <fp>RaspberryPi?Pico?Common*</fp>
+        <fp>RaspberryPi?Pico?SMD*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">A</field>
+        <field name="Value">RaspberryPi_Pico</field>
+        <field name="Footprint">Module:RaspberryPi_Pico_Common_Unspecified</field>
+        <field name="Datasheet">https://datasheets.raspberrypi.com/pico/pico-datasheet.pdf</field>
+        <field name="Description">Versatile and inexpensive microcontroller module powered by RP2040 dual-core Arm Cortex-M0+ processor up to 133 MHz, 264kB SRAM, 2MB QSPI flash; also supports Raspberry Pi Pico 2</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GPIO0" type="bidirectional"/>
+        <pin num="2" name="GPIO1" type="bidirectional"/>
+        <pin num="3" name="GND" type="power_out"/>
+        <pin num="4" name="GPIO2" type="bidirectional"/>
+        <pin num="5" name="GPIO3" type="bidirectional"/>
+        <pin num="6" name="GPIO4" type="bidirectional"/>
+        <pin num="7" name="GPIO5" type="bidirectional"/>
+        <pin num="8" name="GND" type="passive"/>
+        <pin num="9" name="GPIO6" type="bidirectional"/>
+        <pin num="10" name="GPIO7" type="bidirectional"/>
+        <pin num="11" name="GPIO8" type="bidirectional"/>
+        <pin num="12" name="GPIO9" type="bidirectional"/>
+        <pin num="13" name="GND" type="passive"/>
+        <pin num="14" name="GPIO10" type="bidirectional"/>
+        <pin num="15" name="GPIO11" type="bidirectional"/>
+        <pin num="16" name="GPIO12" type="bidirectional"/>
+        <pin num="17" name="GPIO13" type="bidirectional"/>
+        <pin num="18" name="GND" type="passive"/>
+        <pin num="19" name="GPIO14" type="bidirectional"/>
+        <pin num="20" name="GPIO15" type="bidirectional"/>
+        <pin num="21" name="GPIO16" type="bidirectional"/>
+        <pin num="22" name="GPIO17" type="bidirectional"/>
+        <pin num="23" name="GND" type="passive"/>
+        <pin num="24" name="GPIO18" type="bidirectional"/>
+        <pin num="25" name="GPIO19" type="bidirectional"/>
+        <pin num="26" name="GPIO20" type="bidirectional"/>
+        <pin num="27" name="GPIO21" type="bidirectional"/>
+        <pin num="28" name="GND" type="passive"/>
+        <pin num="29" name="GPIO22" type="bidirectional"/>
+        <pin num="30" name="RUN" type="passive"/>
+        <pin num="31" name="GPIO26_ADC0" type="bidirectional"/>
+        <pin num="32" name="GPIO27_ADC1" type="bidirectional"/>
+        <pin num="33" name="AGND" type="power_out"/>
+        <pin num="34" name="GPIO28_ADC2" type="bidirectional"/>
+        <pin num="35" name="ADC_VREF" type="power_in"/>
+        <pin num="36" name="3V3" type="power_out"/>
+        <pin num="37" name="3V3_EN" type="passive"/>
+        <pin num="38" name="GND" type="passive"/>
+        <pin num="39" name="VSYS" type="power_in"/>
+        <pin num="40" name="VBUS" type="power_out"/>
+      </pins>
+    </libpart>
+    <libpart lib="upd78c14_reader" part="uPD78C14GF">
+      <description>NEC uCOM-87AD 8-bit MCU, 16 KB mask ROM, 64-pin QFP (GF-3BE); pin numbers are QFP pins</description>
+      <docs>NEC uPD78C10/C11/C14 datasheet</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">uPD78C14GF</field>
+        <field name="Footprint">Package_DIP:DIP-64_W22.86mm</field>
+        <field name="Datasheet">NEC uPD78C10/C11/C14 datasheet</field>
+        <field name="Description">NEC uCOM-87AD 8-bit MCU, 16 KB mask ROM, 64-pin QFP (GF-3BE); pin numbers are QFP pins</field>
+      </fields>
+      <pins>
+        <pin num="1" name="PA6" type="bidirectional"/>
+        <pin num="2" name="PA7" type="bidirectional"/>
+        <pin num="3" name="PB0" type="bidirectional"/>
+        <pin num="4" name="PB1" type="bidirectional"/>
+        <pin num="5" name="PB2" type="bidirectional"/>
+        <pin num="6" name="PB3" type="bidirectional"/>
+        <pin num="7" name="PB4" type="bidirectional"/>
+        <pin num="8" name="PB5" type="bidirectional"/>
+        <pin num="9" name="PB6" type="bidirectional"/>
+        <pin num="10" name="PB7" type="bidirectional"/>
+        <pin num="11" name="PC0/TxD" type="bidirectional"/>
+        <pin num="12" name="PC1/RxD" type="bidirectional"/>
+        <pin num="13" name="PC2/~{SCK}" type="bidirectional"/>
+        <pin num="14" name="PC3/TI/~{INT2}" type="bidirectional"/>
+        <pin num="15" name="PC4/TO" type="bidirectional"/>
+        <pin num="16" name="PC5/CI" type="bidirectional"/>
+        <pin num="17" name="PC6/CO0" type="bidirectional"/>
+        <pin num="18" name="PC7/CO1" type="bidirectional"/>
+        <pin num="19" name="~{NMI}" type="input"/>
+        <pin num="20" name="INT1" type="input"/>
+        <pin num="21" name="MODE1" type="bidirectional"/>
+        <pin num="22" name="~{RESET}" type="input"/>
+        <pin num="23" name="MODE0" type="bidirectional"/>
+        <pin num="24" name="X2" type="input"/>
+        <pin num="25" name="X1" type="input"/>
+        <pin num="26" name="VSS" type="power_in"/>
+        <pin num="27" name="AVSS" type="power_in"/>
+        <pin num="28" name="AN0" type="input"/>
+        <pin num="29" name="AN1" type="input"/>
+        <pin num="30" name="AN2" type="input"/>
+        <pin num="31" name="AN3" type="input"/>
+        <pin num="32" name="AN4" type="input"/>
+        <pin num="33" name="AN5" type="input"/>
+        <pin num="34" name="AN6" type="input"/>
+        <pin num="35" name="AN7" type="input"/>
+        <pin num="36" name="VAREF" type="input"/>
+        <pin num="37" name="AVDD" type="power_in"/>
+        <pin num="38" name="~{RD}" type="output"/>
+        <pin num="39" name="~{WR}" type="output"/>
+        <pin num="40" name="ALE" type="output"/>
+        <pin num="41" name="PF0" type="bidirectional"/>
+        <pin num="42" name="PF1" type="bidirectional"/>
+        <pin num="43" name="PF2" type="bidirectional"/>
+        <pin num="44" name="PF3" type="bidirectional"/>
+        <pin num="45" name="PF4" type="bidirectional"/>
+        <pin num="46" name="PF5" type="bidirectional"/>
+        <pin num="47" name="PF6" type="bidirectional"/>
+        <pin num="48" name="PF7" type="bidirectional"/>
+        <pin num="49" name="PD0" type="bidirectional"/>
+        <pin num="50" name="PD1" type="bidirectional"/>
+        <pin num="51" name="PD2" type="bidirectional"/>
+        <pin num="52" name="PD3" type="bidirectional"/>
+        <pin num="53" name="PD4" type="bidirectional"/>
+        <pin num="54" name="PD5" type="bidirectional"/>
+        <pin num="55" name="PD6" type="bidirectional"/>
+        <pin num="56" name="PD7" type="bidirectional"/>
+        <pin num="57" name="~{STOP}" type="input"/>
+        <pin num="58" name="VDD" type="power_in"/>
+        <pin num="59" name="PA0" type="bidirectional"/>
+        <pin num="60" name="PA1" type="bidirectional"/>
+        <pin num="61" name="PA2" type="bidirectional"/>
+        <pin num="62" name="PA3" type="bidirectional"/>
+        <pin num="63" name="PA4" type="bidirectional"/>
+        <pin num="64" name="PA5" type="bidirectional"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="74xx">
+      <uri>/usr/share/kicad/symbols//74xx.kicad_sym</uri>
+    </library>
+    <library logical="Device">
+      <uri>/usr/share/kicad/symbols//Device.kicad_sym</uri>
+    </library>
+    <library logical="MCU_Module">
+      <uri>/usr/share/kicad/symbols//MCU_Module.kicad_sym</uri>
+    </library>
+    <library logical="upd78c14_reader">
+      <uri>/home/jeroen/Downloads/PCEngine_Duo/upd78c14-pico-reader/hw/upd78c14_reader.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="+5V" class="Default">
+      <node ref="A1" pin="40" pinfunction="VBUS" pintype="power_out"/>
+      <node ref="C1" pin="1" pintype="passive"/>
+      <node ref="C2" pin="1" pintype="passive"/>
+      <node ref="C3" pin="1" pintype="passive"/>
+      <node ref="R1" pin="1" pintype="passive"/>
+      <node ref="R10" pin="1" pintype="passive"/>
+      <node ref="R11" pin="1" pintype="passive"/>
+      <node ref="R12" pin="1" pintype="passive"/>
+      <node ref="R13" pin="1" pintype="passive"/>
+      <node ref="R14" pin="1" pintype="passive"/>
+      <node ref="R15" pin="1" pintype="passive"/>
+      <node ref="R16" pin="1" pintype="passive"/>
+      <node ref="R17" pin="1" pintype="passive"/>
+      <node ref="R18" pin="1" pintype="passive"/>
+      <node ref="R19" pin="1" pintype="passive"/>
+      <node ref="R2" pin="1" pintype="passive"/>
+      <node ref="R20" pin="1" pintype="passive"/>
+      <node ref="R21" pin="1" pintype="passive"/>
+      <node ref="R22" pin="1" pintype="passive"/>
+      <node ref="R23" pin="1" pintype="passive"/>
+      <node ref="R3" pin="1" pintype="passive"/>
+      <node ref="R4" pin="1" pintype="passive"/>
+      <node ref="R5" pin="1" pintype="passive"/>
+      <node ref="R6" pin="1" pintype="passive"/>
+      <node ref="R7" pin="1" pintype="passive"/>
+      <node ref="R8" pin="1" pintype="passive"/>
+      <node ref="R9" pin="1" pintype="passive"/>
+      <node ref="U1" pin="19" pinfunction="~{NMI}" pintype="input"/>
+      <node ref="U1" pin="37" pinfunction="AVDD" pintype="power_in"/>
+      <node ref="U1" pin="57" pinfunction="~{STOP}" pintype="input"/>
+      <node ref="U1" pin="58" pinfunction="VDD" pintype="power_in"/>
+      <node ref="U2" pin="14" pinfunction="VCC" pintype="power_in"/>
+    </net>
+    <net code="2" name="/A8" class="Default">
+      <node ref="A1" pin="11" pinfunction="GPIO8" pintype="bidirectional"/>
+      <node ref="U1" pin="41" pinfunction="PF0" pintype="bidirectional"/>
+    </net>
+    <net code="3" name="/A9" class="Default">
+      <node ref="A1" pin="12" pinfunction="GPIO9" pintype="bidirectional"/>
+      <node ref="U1" pin="42" pinfunction="PF1" pintype="bidirectional"/>
+    </net>
+    <net code="4" name="/A10" class="Default">
+      <node ref="A1" pin="14" pinfunction="GPIO10" pintype="bidirectional"/>
+      <node ref="U1" pin="43" pinfunction="PF2" pintype="bidirectional"/>
+    </net>
+    <net code="5" name="/A11" class="Default">
+      <node ref="A1" pin="15" pinfunction="GPIO11" pintype="bidirectional"/>
+      <node ref="U1" pin="44" pinfunction="PF3" pintype="bidirectional"/>
+    </net>
+    <net code="6" name="/A12" class="Default">
+      <node ref="A1" pin="16" pinfunction="GPIO12" pintype="bidirectional"/>
+      <node ref="U1" pin="45" pinfunction="PF4" pintype="bidirectional"/>
+    </net>
+    <net code="7" name="/A13" class="Default">
+      <node ref="A1" pin="17" pinfunction="GPIO13" pintype="bidirectional"/>
+      <node ref="U1" pin="46" pinfunction="PF5" pintype="bidirectional"/>
+    </net>
+    <net code="8" name="/A14" class="Default">
+      <node ref="A1" pin="19" pinfunction="GPIO14" pintype="bidirectional"/>
+      <node ref="U1" pin="47" pinfunction="PF6" pintype="bidirectional"/>
+    </net>
+    <net code="9" name="/AD0" class="Default">
+      <node ref="A1" pin="1" pinfunction="GPIO0" pintype="bidirectional"/>
+      <node ref="U1" pin="49" pinfunction="PD0" pintype="bidirectional"/>
+    </net>
+    <net code="10" name="/AD1" class="Default">
+      <node ref="A1" pin="2" pinfunction="GPIO1" pintype="bidirectional"/>
+      <node ref="U1" pin="50" pinfunction="PD1" pintype="bidirectional"/>
+    </net>
+    <net code="11" name="/AD2" class="Default">
+      <node ref="A1" pin="4" pinfunction="GPIO2" pintype="bidirectional"/>
+      <node ref="U1" pin="51" pinfunction="PD2" pintype="bidirectional"/>
+    </net>
+    <net code="12" name="/AD3" class="Default">
+      <node ref="A1" pin="5" pinfunction="GPIO3" pintype="bidirectional"/>
+      <node ref="U1" pin="52" pinfunction="PD3" pintype="bidirectional"/>
+    </net>
+    <net code="13" name="/AD4" class="Default">
+      <node ref="A1" pin="6" pinfunction="GPIO4" pintype="bidirectional"/>
+      <node ref="U1" pin="53" pinfunction="PD4" pintype="bidirectional"/>
+    </net>
+    <net code="14" name="/AD5" class="Default">
+      <node ref="A1" pin="7" pinfunction="GPIO5" pintype="bidirectional"/>
+      <node ref="U1" pin="54" pinfunction="PD5" pintype="bidirectional"/>
+    </net>
+    <net code="15" name="/AD6" class="Default">
+      <node ref="A1" pin="9" pinfunction="GPIO6" pintype="bidirectional"/>
+      <node ref="U1" pin="55" pinfunction="PD6" pintype="bidirectional"/>
+    </net>
+    <net code="16" name="/AD7" class="Default">
+      <node ref="A1" pin="10" pinfunction="GPIO7" pintype="bidirectional"/>
+      <node ref="U1" pin="56" pinfunction="PD7" pintype="bidirectional"/>
+    </net>
+    <net code="17" name="/ALE" class="Default">
+      <node ref="A1" pin="21" pinfunction="GPIO16" pintype="bidirectional"/>
+      <node ref="U1" pin="40" pinfunction="ALE" pintype="output"/>
+    </net>
+    <net code="18" name="/CLK" class="Default">
+      <node ref="U1" pin="25" pinfunction="X1" pintype="input"/>
+      <node ref="U2" pin="4" pintype="output"/>
+    </net>
+    <net code="19" name="/CLK_PWM" class="Default">
+      <node ref="A1" pin="26" pinfunction="GPIO20" pintype="bidirectional"/>
+      <node ref="U2" pin="1" pintype="input"/>
+    </net>
+    <net code="20" name="/MODE0" class="Default">
+      <node ref="R23" pin="2" pintype="passive"/>
+      <node ref="U1" pin="18" pinfunction="PC7/CO1" pintype="bidirectional"/>
+      <node ref="U1" pin="23" pinfunction="MODE0" pintype="bidirectional"/>
+    </net>
+    <net code="21" name="/MODE1" class="Default">
+      <node ref="R22" pin="2" pintype="passive"/>
+      <node ref="U1" pin="17" pinfunction="PC6/CO0" pintype="bidirectional"/>
+      <node ref="U1" pin="21" pinfunction="MODE1" pintype="bidirectional"/>
+    </net>
+    <net code="22" name="/PA0" class="Default">
+      <node ref="R1" pin="2" pintype="passive"/>
+      <node ref="U1" pin="59" pinfunction="PA0" pintype="bidirectional"/>
+    </net>
+    <net code="23" name="/PA1" class="Default">
+      <node ref="R2" pin="2" pintype="passive"/>
+      <node ref="U1" pin="60" pinfunction="PA1" pintype="bidirectional"/>
+    </net>
+    <net code="24" name="/PA2" class="Default">
+      <node ref="R3" pin="2" pintype="passive"/>
+      <node ref="U1" pin="61" pinfunction="PA2" pintype="bidirectional"/>
+    </net>
+    <net code="25" name="/PA3" class="Default">
+      <node ref="R4" pin="2" pintype="passive"/>
+      <node ref="U1" pin="62" pinfunction="PA3" pintype="bidirectional"/>
+    </net>
+    <net code="26" name="/PA4" class="Default">
+      <node ref="R5" pin="2" pintype="passive"/>
+      <node ref="U1" pin="63" pinfunction="PA4" pintype="bidirectional"/>
+    </net>
+    <net code="27" name="/PA5" class="Default">
+      <node ref="R6" pin="2" pintype="passive"/>
+      <node ref="U1" pin="64" pinfunction="PA5" pintype="bidirectional"/>
+    </net>
+    <net code="28" name="/PA6" class="Default">
+      <node ref="R7" pin="2" pintype="passive"/>
+      <node ref="U1" pin="1" pinfunction="PA6" pintype="bidirectional"/>
+    </net>
+    <net code="29" name="/PA7" class="Default">
+      <node ref="R8" pin="2" pintype="passive"/>
+      <node ref="U1" pin="2" pinfunction="PA7" pintype="bidirectional"/>
+    </net>
+    <net code="30" name="/PB0" class="Default">
+      <node ref="R9" pin="2" pintype="passive"/>
+      <node ref="U1" pin="3" pinfunction="PB0" pintype="bidirectional"/>
+    </net>
+    <net code="31" name="/PB1" class="Default">
+      <node ref="R10" pin="2" pintype="passive"/>
+      <node ref="U1" pin="4" pinfunction="PB1" pintype="bidirectional"/>
+    </net>
+    <net code="32" name="/PB2" class="Default">
+      <node ref="R11" pin="2" pintype="passive"/>
+      <node ref="U1" pin="5" pinfunction="PB2" pintype="bidirectional"/>
+    </net>
+    <net code="33" name="/PB3" class="Default">
+      <node ref="R12" pin="2" pintype="passive"/>
+      <node ref="U1" pin="6" pinfunction="PB3" pintype="bidirectional"/>
+    </net>
+    <net code="34" name="/PB4" class="Default">
+      <node ref="R13" pin="2" pintype="passive"/>
+      <node ref="U1" pin="7" pinfunction="PB4" pintype="bidirectional"/>
+    </net>
+    <net code="35" name="/PB5" class="Default">
+      <node ref="R14" pin="2" pintype="passive"/>
+      <node ref="U1" pin="8" pinfunction="PB5" pintype="bidirectional"/>
+    </net>
+    <net code="36" name="/PB6" class="Default">
+      <node ref="R15" pin="2" pintype="passive"/>
+      <node ref="U1" pin="9" pinfunction="PB6" pintype="bidirectional"/>
+    </net>
+    <net code="37" name="/PB7" class="Default">
+      <node ref="R16" pin="2" pintype="passive"/>
+      <node ref="U1" pin="10" pinfunction="PB7" pintype="bidirectional"/>
+    </net>
+    <net code="38" name="/PC1" class="Default">
+      <node ref="R17" pin="2" pintype="passive"/>
+      <node ref="U1" pin="12" pinfunction="PC1/RxD" pintype="bidirectional"/>
+    </net>
+    <net code="39" name="/PC2" class="Default">
+      <node ref="R18" pin="2" pintype="passive"/>
+      <node ref="U1" pin="13" pinfunction="PC2/~{SCK}" pintype="bidirectional"/>
+    </net>
+    <net code="40" name="/PC3" class="Default">
+      <node ref="R19" pin="2" pintype="passive"/>
+      <node ref="U1" pin="14" pinfunction="PC3/TI/~{INT2}" pintype="bidirectional"/>
+    </net>
+    <net code="41" name="/PC4" class="Default">
+      <node ref="R20" pin="2" pintype="passive"/>
+      <node ref="U1" pin="15" pinfunction="PC4/TO" pintype="bidirectional"/>
+    </net>
+    <net code="42" name="/PC5" class="Default">
+      <node ref="R21" pin="2" pintype="passive"/>
+      <node ref="U1" pin="16" pinfunction="PC5/CI" pintype="bidirectional"/>
+    </net>
+    <net code="43" name="/RESET_INV" class="Default">
+      <node ref="U2" pin="6" pintype="output"/>
+      <node ref="U2" pin="9" pintype="input"/>
+    </net>
+    <net code="44" name="/RUN" class="Default">
+      <node ref="A1" pin="25" pinfunction="GPIO19" pintype="bidirectional"/>
+      <node ref="R24" pin="1" pintype="passive"/>
+      <node ref="U2" pin="5" pintype="input"/>
+    </net>
+    <net code="45" name="/TXD" class="Default">
+      <node ref="A1" pin="27" pinfunction="GPIO21" pintype="bidirectional"/>
+      <node ref="U1" pin="11" pinfunction="PC0/TxD" pintype="bidirectional"/>
+    </net>
+    <net code="46" name="/~{CLK}" class="Default">
+      <node ref="U1" pin="24" pinfunction="X2" pintype="input"/>
+      <node ref="U2" pin="2" pintype="output"/>
+      <node ref="U2" pin="3" pintype="input"/>
+    </net>
+    <net code="47" name="/~{RD}" class="Default">
+      <node ref="A1" pin="22" pinfunction="GPIO17" pintype="bidirectional"/>
+      <node ref="U1" pin="38" pinfunction="~{RD}" pintype="output"/>
+    </net>
+    <net code="48" name="/~{RESET}" class="Default">
+      <node ref="U1" pin="22" pinfunction="~{RESET}" pintype="input"/>
+      <node ref="U2" pin="8" pintype="output"/>
+    </net>
+    <net code="49" name="GND" class="Default">
+      <node ref="A1" pin="13" pinfunction="GND" pintype="passive"/>
+      <node ref="A1" pin="18" pinfunction="GND" pintype="passive"/>
+      <node ref="A1" pin="23" pinfunction="GND" pintype="passive"/>
+      <node ref="A1" pin="28" pinfunction="GND" pintype="passive"/>
+      <node ref="A1" pin="3" pinfunction="GND" pintype="power_out"/>
+      <node ref="A1" pin="38" pinfunction="GND" pintype="passive"/>
+      <node ref="A1" pin="8" pinfunction="GND" pintype="passive"/>
+      <node ref="C1" pin="2" pintype="passive"/>
+      <node ref="C2" pin="2" pintype="passive"/>
+      <node ref="C3" pin="2" pintype="passive"/>
+      <node ref="R24" pin="2" pintype="passive"/>
+      <node ref="U1" pin="20" pinfunction="INT1" pintype="input"/>
+      <node ref="U1" pin="26" pinfunction="VSS" pintype="power_in"/>
+      <node ref="U1" pin="27" pinfunction="AVSS" pintype="power_in"/>
+      <node ref="U1" pin="28" pinfunction="AN0" pintype="input"/>
+      <node ref="U1" pin="29" pinfunction="AN1" pintype="input"/>
+      <node ref="U1" pin="30" pinfunction="AN2" pintype="input"/>
+      <node ref="U1" pin="31" pinfunction="AN3" pintype="input"/>
+      <node ref="U1" pin="32" pinfunction="AN4" pintype="input"/>
+      <node ref="U1" pin="33" pinfunction="AN5" pintype="input"/>
+      <node ref="U1" pin="34" pinfunction="AN6" pintype="input"/>
+      <node ref="U1" pin="35" pinfunction="AN7" pintype="input"/>
+      <node ref="U1" pin="36" pinfunction="VAREF" pintype="input"/>
+      <node ref="U2" pin="11" pintype="input"/>
+      <node ref="U2" pin="13" pintype="input"/>
+      <node ref="U2" pin="7" pinfunction="GND" pintype="power_in"/>
+    </net>
+    <net code="50" name="unconnected-(A1-3V3-Pad36)" class="Default">
+      <node ref="A1" pin="36" pinfunction="3V3" pintype="power_out+no_connect"/>
+    </net>
+    <net code="51" name="unconnected-(A1-3V3_EN-Pad37)" class="Default">
+      <node ref="A1" pin="37" pinfunction="3V3_EN" pintype="passive+no_connect"/>
+    </net>
+    <net code="52" name="unconnected-(A1-ADC_VREF-Pad35)" class="Default">
+      <node ref="A1" pin="35" pinfunction="ADC_VREF" pintype="power_in+no_connect"/>
+    </net>
+    <net code="53" name="unconnected-(A1-AGND-Pad33)" class="Default">
+      <node ref="A1" pin="33" pinfunction="AGND" pintype="power_out+no_connect"/>
+    </net>
+    <net code="54" name="unconnected-(A1-GPIO15-Pad20)" class="Default">
+      <node ref="A1" pin="20" pinfunction="GPIO15" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="55" name="unconnected-(A1-GPIO18-Pad24)" class="Default">
+      <node ref="A1" pin="24" pinfunction="GPIO18" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="56" name="unconnected-(A1-GPIO22-Pad29)" class="Default">
+      <node ref="A1" pin="29" pinfunction="GPIO22" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="57" name="unconnected-(A1-GPIO26_ADC0-Pad31)" class="Default">
+      <node ref="A1" pin="31" pinfunction="GPIO26_ADC0" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="58" name="unconnected-(A1-GPIO27_ADC1-Pad32)" class="Default">
+      <node ref="A1" pin="32" pinfunction="GPIO27_ADC1" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="59" name="unconnected-(A1-GPIO28_ADC2-Pad34)" class="Default">
+      <node ref="A1" pin="34" pinfunction="GPIO28_ADC2" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="60" name="unconnected-(A1-RUN-Pad30)" class="Default">
+      <node ref="A1" pin="30" pinfunction="RUN" pintype="passive+no_connect"/>
+    </net>
+    <net code="61" name="unconnected-(A1-VSYS-Pad39)" class="Default">
+      <node ref="A1" pin="39" pinfunction="VSYS" pintype="power_in+no_connect"/>
+    </net>
+    <net code="62" name="unconnected-(U1-PF7-Pad48)" class="Default">
+      <node ref="U1" pin="48" pinfunction="PF7" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="63" name="unconnected-(U1-~{WR}-Pad39)" class="Default">
+      <node ref="U1" pin="39" pinfunction="~{WR}" pintype="output+no_connect"/>
+    </net>
+    <net code="64" name="unconnected-(U2-Pad10)" class="Default">
+      <node ref="U2" pin="10" pintype="output+no_connect"/>
+    </net>
+    <net code="65" name="unconnected-(U2-Pad12)" class="Default">
+      <node ref="U2" pin="12" pintype="output+no_connect"/>
+    </net>
+  </nets>
+</export>

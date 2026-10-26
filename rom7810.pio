@@ -1,0 +1,48 @@
+; External-ROM emulator for the NEC uPD7810/78C1x multiplexed bus.
+;
+; Pin mapping (in_base = out_base = GP0):
+;   GP0..GP7   AD0..AD7  (chip PD0..PD7, multiplexed address/data)
+;   GP8..GP14  A8..A14   (chip PF0..PF6)  - A15 is ignored on purpose, so the
+;                                           32 KB image mirrors at 8000h like
+;                                           the original 27C256 board
+;   GP16       ALE
+;   GP17       /RD       (jmp pin)
+;
+; The CPU sends (rom_base >> 15) once at start-up; rom_base must be 32 KB
+; aligned. For every read cycle the SM pushes rom_base | A0..A14, two chained
+; DMA channels fetch that byte and write it back to the TX FIFO, and the SM
+; drives it onto AD0..AD7 until /RD rises.
+;
+; Cycles where ALE pulses but /RD never goes low (writes, or internal
+; accesses) are dropped as soon as the next ALE begins.
+
+.program rom7810
+.define PUBLIC PIN_ALE 16
+.define PUBLIC PIN_RD  17
+
+    pull block                 ; X = rom_base >> 15
+    mov x, osr
+.wrap_target
+cycle:
+    mov isr, null              ; clear ISR and its shift counter
+    wait 1 gpio PIN_ALE
+    wait 0 gpio PIN_ALE        ; ALE falling edge: address is on the bus
+    in pins, 15                ; A0..A14
+    in x, 17                   ; ISR = rom_base | A0..A14
+poll:
+    jmp pin, rd_high           ; /RD still high
+    push block                 ; /RD low: hand the address to DMA
+    pull block                 ; DMA hands back the ROM byte
+    out pins, 8
+    mov osr, ~null
+    out pindirs, 8             ; drive AD0..AD7
+    wait 1 gpio PIN_RD         ; hold the data until /RD rises
+    mov osr, null
+    out pindirs, 8             ; release the bus
+.wrap
+rd_high:
+    mov osr, pins              ; sample GP0.. (ALE is bit 16)
+    out null, PIN_ALE
+    out y, 1                   ; Y = ALE
+    jmp !y, poll               ; ALE still low: keep watching /RD
+    jmp cycle                  ; a new bus cycle started without a read

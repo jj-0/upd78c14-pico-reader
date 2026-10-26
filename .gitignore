@@ -1,0 +1,15 @@
+# build output
+build/
+
+# local tooling / KiCad scratch files
+.claude/
+*.kicad_prl
+*-backups/
+fp-info-cache
+\#auto_saved_files#
+hw/upd78c14-pico-reader.svg
+
+# capture output
+*.hex
+*.bin
+!upstream/upd7811-reader.bin
