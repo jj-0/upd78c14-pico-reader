@@ -167,7 +167,7 @@ instructions). **Not yet tested on hardware.** If the dump stalls:
   This project's hardware files in `hw/` are an adaptation of that design and are
   shared under the same CC BY-SA 4.0 terms.
 - This project's own code and docs (firmware, PIO program, tools, wiring diagrams) are
-  **MIT** licensed; see `LICENSE` for exactly which files that covers.
+  **MIT** licensed; see `LICENSES.md` for exactly which files that covers.
 - `pico_sdk_import.cmake` is from the Raspberry Pi pico-sdk (BSD-3-Clause).
 - Pin data comes from the NEC µPD78C10/C11/C14 and µPD78C10A/11A/12A datasheets.
   The datasheets themselves are not included.
